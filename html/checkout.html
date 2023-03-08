@@ -13,7 +13,7 @@
 
     <!-- nav -->
     <section class="top-header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
             <div class="container">
               <a class="navbar-brand" href="index.html">TiguS</a>
               <button
@@ -33,23 +33,23 @@
                 <ul class="navbar-nav ms-auto">
 
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="index.html">Home</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Menu</a>
+                    <a class="nav-link" href="menu.html">Menu</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Order Online</a>
+                    <a class="nav-link" href="picorder.html">Order Online</a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="#" class="nav-link btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</a>
+                    <a href="#" class="nav-link btn btn-outline-seccess" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</a>
                   </li>
 
                   <li class="nav-item">
-                    <a href="#" class="nav-link btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Cart</a>
+                    <a href="#" class="nav-link btn btn-outline-seccess" data-bs-toggle="modal" data-bs-target="#cartModal">Cart</a>
                   </li>
 
                 </ul>
@@ -82,14 +82,7 @@
                         <p>Your cart is currently empty.</p>
                     </div>
                     <div class="modal-footer">
-                        <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                        >
-                        Close
-                        </button>
-                        <button type="button" class="btn btn-primary">Checkout</button>
+                        <button type="button" class="btn btn-success">Checkout</button>
                     </div>
                     </div>
                 </div>
@@ -120,7 +113,7 @@
                                 <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
                                 <label for="floatingPassword">Password</label>
                             </div>
-                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-success" type="submit">Sign up</button>
                             <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
                             <hr class="my-4">
                             <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
@@ -150,17 +143,15 @@
     <!-- checkout -->
     <section class="checkout">
         <div class="container">
-            
-
             <main>
               <div class="py-5 text-center">
-                <h2 class="p-2 border-bottom">All menu - Menu catagory</h2>
+                <h2 class="p-2 border-bottom">Payment method</h2>
               </div>
               <div class="row g-5">
-                <div class="col-md-5 col-lg-4 p-4 order-md-last rounded-3 border ">
+                <div class="col-md-5 col-lg-4 p-4 order-md-last ">
                   <h4 class="d-flex justify-content-between align-items-center mb-3">
-                    <span class="text-primary">Your cart</span>
-                    <span class="badge bg-primary rounded-pill">3</span>
+                    <span class="text-success">Your cart</span>
+                    <span class="badge bg-success rounded-pill">3</span>
                   </h4>
                   <ul class="list-group mb-3">
                     <li class="list-group-item d-flex justify-content-between lh-sm">
@@ -211,7 +202,7 @@
                         </div>
                       </div>
           
-                      <div class="col-12">
+                      <!-- <div class="col-12">
                         <label for="username" class="form-label">Username</label>
                         <div class="input-group has-validation">
                           <span class="input-group-text">@</span>
@@ -220,10 +211,10 @@
                             Your username is required.
                           </div>
                         </div>
-                      </div>
+                      </div> -->
           
                       <div class="col-12">
-                        <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                        <label for="email" class="form-label">Email <span class="text-muted">(Username)</span></label>
                         <input type="email" class="form-control" id="email" placeholder="you@example.com">
                         <div class="invalid-feedback">
                           Please enter a valid email address for shipping updates.
@@ -238,16 +229,16 @@
                         </div>
                       </div>
           
-                      <div class="col-12">
+                      <!-- <div class="col-12">
                         <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
                         <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                      </div>
+                      </div> -->
           
                       <div class="col-md-5">
                         <label for="country" class="form-label">Country</label>
                         <select class="form-select" id="country" required="">
                           <option value="">Choose...</option>
-                          <option>United States</option>
+                          <option>Thailand</option>
                         </select>
                         <div class="invalid-feedback">
                           Please select a valid country.
@@ -255,10 +246,10 @@
                       </div>
           
                       <div class="col-md-4">
-                        <label for="state" class="form-label">State</label>
+                        <label for="state" class="form-label">Province</label>
                         <select class="form-select" id="state" required="">
                           <option value="">Choose...</option>
-                          <option>California</option>
+                          <option>Chiang mai</option>
                         </select>
                         <div class="invalid-feedback">
                           Please provide a valid state.
@@ -267,7 +258,7 @@
           
                       <div class="col-md-3">
                         <label for="zip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="zip" placeholder="" required="">
+                        <input type="text" class="form-control" id="zip" placeholder=" for example 50200" required="">
                         <div class="invalid-feedback">
                           Zip code required.
                         </div>
@@ -276,10 +267,10 @@
           
                     <hr class="my-4">
           
-                    <div class="form-check">
+                    <!-- <div class="form-check">
                       <input type="checkbox" class="form-check-input" id="same-address">
                       <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
-                    </div>
+                    </div> -->
           
                     <div class="form-check">
                       <input type="checkbox" class="form-check-input" id="save-info">
@@ -292,57 +283,18 @@
           
                     <div class="my-3">
                       <div class="form-check">
-                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
-                        <label class="form-check-label" for="credit">Credit card</label>
+                        <input id="cash" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                        <label class="form-check-label" for="cash">Cash</label>
                       </div>
                       <div class="form-check">
-                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
-                        <label class="form-check-label" for="debit">Debit card</label>
-                      </div>
-                      <div class="form-check">
-                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
-                        <label class="form-check-label" for="paypal">PayPal</label>
-                      </div>
-                    </div>
-          
-                    <div class="row gy-3">
-                      <div class="col-md-6">
-                        <label for="cc-name" class="form-label">Name on card</label>
-                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                        <small class="text-muted">Full name as displayed on card</small>
-                        <div class="invalid-feedback">
-                          Name on card is required
-                        </div>
-                      </div>
-          
-                      <div class="col-md-6">
-                        <label for="cc-number" class="form-label">Credit card number</label>
-                        <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Credit card number is required
-                        </div>
-                      </div>
-          
-                      <div class="col-md-3">
-                        <label for="cc-expiration" class="form-label">Expiration</label>
-                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Expiration date required
-                        </div>
-                      </div>
-          
-                      <div class="col-md-3">
-                        <label for="cc-cvv" class="form-label">CVV</label>
-                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                        <div class="invalid-feedback">
-                          Security code required
-                        </div>
+                        <input id="qrcode" name="paymentMethod" type="radio" class="form-check-input" required="">
+                        <label class="form-check-label" for="qrcode">QR code</label>
                       </div>
                     </div>
           
                     <hr class="my-4">
           
-                    <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                    <button class="w-100 btn btn-success btn-lg" type="submit">Continue to checkout</button>
                   </form>
                 </div>
               </div>
@@ -353,20 +305,18 @@
     
     <!-- footer -->
     <section class="footer">
-        <div class="container">
-            <footer class="py-3 my-4">
-              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-              </ul>
-              <p class="text-center text-muted">© 2022 Company, Inc</p>
-            </footer>
-        </div>
-    </section>
-    <!-- end footer -->
+      <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+              <li class="nav-item"><a href="menu.html" class="nav-link px-2 text-muted">Menu</a></li>
+              <li class="nav-item"><a href="picorder.html" class="nav-link px-2 text-muted">Order Online</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 TiguS Company, Inc</p>
+          </footer>
+      </div>
+  </section>
+  <!-- end footer -->
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

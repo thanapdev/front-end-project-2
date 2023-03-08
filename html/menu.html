@@ -11,157 +11,151 @@
 </head>
 <body>
 
-    <!-- nav -->
-    <section class="top-header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">TiguS</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="navbarNav">
-            
-                <ul class="navbar-nav ms-auto">
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link  active" href="#">Menu</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Order Online</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Cart</a>
-                  </li>
-
-                </ul>
-
+     <!-- nav -->
+     <section class="top-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+              <div class="container">
+                <a class="navbar-brand" href="index.html">TiguS</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                <div class="collapse navbar-collapse" id="navbarNav">
+              
+                  <ul class="navbar-nav ms-auto">
+  
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+  
+                    <li class="nav-item">
+                      <a class="nav-link  active" href="menu.html">Menu</a>
+                    </li>
+  
+                    <li class="nav-item">
+                      <a class="nav-link" href="picorder.html">Order Online</a>
+                    </li>
+  
+                    <li class="nav-item">
+                      <a href="#" class="nav-link btn btn-outline-seccess" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</a>
+                    </li>
+  
+                    <li class="nav-item">
+                      <a href="#" class="nav-link btn btn-outline-seccess" data-bs-toggle="modal" data-bs-target="#cartModal">Cart</a>
+                    </li>
+  
+                  </ul>
+  
+                </div>
               </div>
-            </div>
-
-            <!-- Modal -->
-
-                <!-- Cart Modal -->
-                <div
-                class="modal fade"
-                id="cartModal"
-                tabindex="-1"
-                aria-labelledby="cartModalLabel"
-                aria-hidden="true"
-                >
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
-                        <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Your cart is currently empty.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                        >
-                        Close
-                        </button>
-                        <button type="button" class="btn btn-primary">Checkout</button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <!-- Login Modal -->
-                <div
-                class="modal fade"
-                id="loginModal"
-                tabindex="-1"
-                aria-labelledby="cartModalLabel"
-                aria-hidden="true"
-                >
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header p-5 pb-4 border-bottom-0">
-                            <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body p-5 pt-0">
-                            <form class="">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Email address</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-                                <label for="floatingPassword">Password</label>
-                            </div>
-                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
-                            <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
-                            <hr class="my-4">
-                            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-                            <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
-                                Sign up with Twitter
-                            </button>
-                            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
-                                Sign up with Facebook
-                            </button>
-                            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
-                                Sign up with GitHub
-                            </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-            <!-- end Modal -->
-          </nav>
-    </section>
-    <!-- end nav -->
+  
+              <!-- Modal -->
+  
+                  <!-- Cart Modal -->
+                  <div
+                  class="modal fade"
+                  id="cartModal"
+                  tabindex="-1"
+                  aria-labelledby="cartModalLabel"
+                  aria-hidden="true"
+                  >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                          <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          ></button>
+                      </div>
+                      <div class="modal-body">
+                          <p>Your cart is currently empty.</p>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-success">Checkout</button>
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+  
+                  <!-- Login Modal -->
+                  <div
+                  class="modal fade"
+                  id="loginModal"
+                  tabindex="-1"
+                  aria-labelledby="cartModalLabel"
+                  aria-hidden="true"
+                  >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header p-5 pb-4 border-bottom-0">
+                              <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+  
+                          <div class="modal-body p-5 pt-0">
+                              <form class="">
+                              <div class="form-floating mb-3">
+                                  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                                  <label for="floatingInput">Email address</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                  <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                                  <label for="floatingPassword">Password</label>
+                              </div>
+                              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-success" type="submit">Sign up</button>
+                              <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                              <hr class="my-4">
+                              <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                              <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+                                  Sign up with Twitter
+                              </button>
+                              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+                                  Sign up with Facebook
+                              </button>
+                              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+                                  Sign up with GitHub
+                              </button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+  
+              <!-- end Modal -->
+            </nav>
+      </section>
+      <!-- end nav -->
 
     <!-- catagory -->
     <section class="catagory">
         <div class="container px-4 py-5" id="custom-cards">
-            <h2 class="pb-2 border-bottom">All menu - Menu catagory</h2>
+            <h2 class="pb-2 border-bottom text-center">All menu - Menu catagory</h2>
         
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 
                 <!-- catagory 1 -->
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                    <h3 class="text-dark text-center mb-4 display-6 lh-1 fw-bold">Main Dish</h3>
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(/img/maindish.png);">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Catagory 1</h3>
+                            
                             <ul class="d-flex list-unstyled mt-auto">
                             <li class="nav-item">
-                                <a href="#" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#catagory1">Sign in</a>
+                                <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#catagory1">See more</a>
                             </li>
                             </ul>
 
@@ -307,12 +301,15 @@
         
                 <!-- catagory 2 -->
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                    <h3 class="text-dark text-center mb-4 display-6 lh-1 fw-bold">Side Dish</h3>
+                    
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(/img/sidedish.png);">
+                        
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Catagory 2</h3>
+                            
                             <ul class="d-flex list-unstyled mt-auto">
                             <li class="nav-item">
-                                <a href="#" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#catagory2">Sign in</a>
+                                <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#catagory2">See more</a>
                             </li>
                             </ul>
 
@@ -459,12 +456,12 @@
         
                 <!-- catagory 3 -->
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                    <h3 class="text-dark text-center mb-4 display-6 lh-1 fw-bold">Beverage</h3>
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(/img/beverage.png) ;">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Catagory 3</h3>
                             <ul class="d-flex list-unstyled mt-auto">
                             <li class="nav-item">
-                                <a href="#" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#catagory3">Sign in</a>
+                                <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#catagory3">See more</a>
                             </li>
                             </ul>
 
@@ -618,17 +615,15 @@
         <div class="container">
             <footer class="py-3 my-4">
               <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link px-2 text-muted">Menu</a></li>
+                <li class="nav-item"><a href="picorder.html" class="nav-link px-2 text-muted">Order Online</a></li>
               </ul>
-              <p class="text-center text-muted">© 2022 Company, Inc</p>
+              <p class="text-center text-muted">© 2022 TiguS Company, Inc</p>
             </footer>
         </div>
     </section>
-    <!-- end footer -->
+    <!-- end footer --> 
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
